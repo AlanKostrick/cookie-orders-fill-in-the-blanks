@@ -13,7 +13,7 @@ public class MasterOrder {
 
 	}
 
-	public int listSize() {
+	public int getVarietyCount() {
 
 		return orders.size();
 	}
