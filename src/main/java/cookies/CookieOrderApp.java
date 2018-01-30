@@ -13,7 +13,7 @@ public class CookieOrderApp {
 		myOrder.addOrder(new CookieOrder("Samoas", 2));
 		myOrder.addOrder(new CookieOrder("Tagalongs", 3));
 
-		System.out.println(myOrder.getTotalBoxes());
+		System.out.println(myOrder.getBoxCount());
 
 		System.out.println("What would you like to remove?(variety or none)");
 		String toRemove = input.nextLine();
