@@ -3,15 +3,11 @@ package cookies;
 public class CookieOrder {
 
 	private String variety;
-	private int numBoxes;
-
-	public CookieOrder() {
-
-	}
+	private int getBoxCount;
 
 	public CookieOrder(String variety, int numBoxes) {
 		this.variety = variety;
-		this.numBoxes = numBoxes;
+		this.getBoxCount = numBoxes;
 	}
 
 	public String getVariety() {
@@ -19,9 +15,9 @@ public class CookieOrder {
 		return variety;
 	}
 
-	public int getNumBoxes() {
+	public int getGetBoxCount() {
 		
-		return numBoxes;
+		return getBoxCount;
 	}
 
 }

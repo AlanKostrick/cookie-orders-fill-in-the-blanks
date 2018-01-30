@@ -13,19 +13,19 @@ public class MasterOrder {
 
 	}
 
-	public int listSize() {
+	public int getVarietyCount() {
 
 		return orders.size();
 	}
 
-	public int getTotalBoxes() {
+	public int getBoxCount() {
 		int boxes = 0;
 
 		// for(int i=0; i<orders.size(); i++) {
 		// boxes += orders.get(i).getNumBoxes();
 		// }
 		for (CookieOrder order : orders) {
-			boxes += order.getNumBoxes();
+			boxes += order.getGetBoxCount();
 		}
 		return boxes;
 	}
@@ -41,7 +41,7 @@ public class MasterOrder {
 	public void showOrder() {
 		for (CookieOrder order : orders) {
 			System.out.println("Variety: " + order.getVariety() +
-					" Boxes: " + order.getNumBoxes());
+					" Boxes: " + order.getGetBoxCount());
 		}
 	}
 

@@ -7,13 +7,6 @@ import org.junit.Test;
 public class CookieOrderTest {
 
 	@Test
-	public void shouldInstantiateACookieOrderObject() {
-		CookieOrder underTest = new CookieOrder();
-
-		assertNotNull(underTest);
-	}
-
-	@Test
 	public void shouldInstantiateACookieObjectWithVarietyAndBoxes() {
 		CookieOrder underTest = new CookieOrder("", 0);
 
@@ -32,7 +25,7 @@ public class CookieOrderTest {
 	@Test
 	public void shouldReturnNumberOfBoxesAsOne() {
 		CookieOrder underTest = new CookieOrder("", 1);
-		int check = underTest.getNumBoxes();
+		int check = underTest.getGetBoxCount();
 		
 		assertEquals(1, check);
 	}

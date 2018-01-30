@@ -17,7 +17,7 @@ public class MasterOrderTest {
 	public void assertThatAnOrderHasBeenAdded() {
 		MasterOrder underTest = new MasterOrder();
 		underTest.addOrder(new CookieOrder("",0));
-		int check = underTest.listSize();
+		int check = underTest.getVarietyCount();
 		assertEquals(1, check);
 	}
 	
@@ -26,7 +26,7 @@ public class MasterOrderTest {
 		MasterOrder underTest = new MasterOrder();
 		underTest.addOrder(new CookieOrder("",0));
 		underTest.addOrder(new CookieOrder("",0));
-		int check = underTest.listSize();
+		int check = underTest.getVarietyCount();
 		assertEquals(2, check);
 	}
 	
@@ -34,7 +34,7 @@ public class MasterOrderTest {
 	public void assertThatGetTotalBoxesIsOne() {
 		MasterOrder underTest = new MasterOrder();
 		underTest.addOrder(new CookieOrder("",1));
-		int check = underTest.getTotalBoxes();
+		int check = underTest.getBoxCount();
 		assertEquals(1, check);
 	}
 	
@@ -42,7 +42,7 @@ public class MasterOrderTest {
 	public void assertThatGetTotalBoxesIsTwo() {
 		MasterOrder underTest = new MasterOrder();
 		underTest.addOrder(new CookieOrder("",2));
-		int check = underTest.getTotalBoxes();
+		int check = underTest.getBoxCount();
 		assertEquals(2, check);
 	}
 	
@@ -51,7 +51,7 @@ public class MasterOrderTest {
 		MasterOrder underTest = new MasterOrder();
 		underTest.addOrder(new CookieOrder("",2));
 		underTest.addOrder(new CookieOrder("",1));
-		int check = underTest.getTotalBoxes();
+		int check = underTest.getBoxCount();
 		assertEquals(3, check);
 	}
 	
@@ -62,7 +62,7 @@ public class MasterOrderTest {
 		underTest.addOrder(new CookieOrder("Tagalongs",2));
 		underTest.addOrder(new CookieOrder("Thin Mints",1));
 		underTest.removeVariety("Tagalongs");
-		int check = underTest.listSize();
+		int check = underTest.getVarietyCount();
 		assertEquals(1, check);
 	
 	}
